@@ -76,7 +76,7 @@ foreach($res as $b) {
 			if( $url != null )//&& filter_var($url, FILTER_VALIDATE_URL ))
 			{
 				try{
-					$turl="http://haribabu:Wo0sVXeBGQ@paygo.crawlera.com:8010/fetch?url=".$url;
+					$turl="http://Buy_some_proxies/?url=".$url;
 					$alcEntities = @$alchemyObj->URLGetRankedNamedEntities($turl,'json', $namedEntityParams) ;
 					$alcRelations = @$alchemyObj->URLGetRelations($turl,'json');
 					$alcAuthor = json_decode(@$alchemyObj->URLGetAuthor($turl,'json')) ? json_decode($alchemyObj->URLGetAuthor($turl,'json'))->author : $b['name'];
