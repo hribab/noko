@@ -4,7 +4,8 @@ require "open-uri"
 require "csv"
 require "restclient"
 
-i=0
+
+i = 0
 File.open("businesswire2014.csv").readlines.each do |line|
   t=open("bwall.txt", "a")
   puts i
